@@ -1,5 +1,5 @@
-#File: NPC.py - NPC Creator 
-#Create NPC Characters based on Dungeons and Dragons 5e
+#File: DetailedNPC.py - Detailed NPC Creator 
+#Create Detailed NPC Characters based on Dungeons and Dragons 5e
 # Python Ver 3.6.5
 # Author:  Andrew Chamberlain
 # Date:    4/20/2018
