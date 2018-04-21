@@ -1,5 +1,6 @@
+#File: NPC.py - NPC Creator 
+#Create NPC Characters based on Dungeons and Dragons 5e
 # Python Ver 3.6.5
-#/Users/Quilty/Documents/Projects/NPC.py - NPC Creator 
 # Author:  Andrew Chamberlain
 # Date:    4/20/2018
 ######################################
@@ -15,32 +16,32 @@ def NPCAppearance():
     "Exceptionally beautiful", "Exceptionally ugly"]
     NPCAppearanceDesc = random.choice(NPCAppearanceList)
     #NPCAppearanceIndex = NPCAppearanceList.index(NPCAppearanceDesc)
-    print(NPCAppearanceDesc)
+    print("Appearance:",NPCAppearanceDesc)
 
 def NPCHighAbility():
     NPCHighAbilityList = ["Strength - powerful, brawny, strong as an ox", "Dexterity - lithe, agile, graceful",
-    "Constitution - hardy, hale, healthy", "Intelligence-studious, learned, inquisitive", 
+    "Constitution - hardy, hale, healthy", "Intelligence - studious, learned, inquisitive", 
     "Wisdom - perceptive, spiritual, insightful", "Charisma - persuasive, forceful, born leader"]
     NPCHighAbilityDesc = random.choice(NPCHighAbilityList)
     #NPCHighAbilityIndex = NPCHighAbilityList.index(NPCHighAbilityDesc)
-    print(NPCHighAbilityDesc)
+    print("High Ability:",NPCHighAbilityDesc)
 
 def NPCLowAbility():
     NPCLowAbilityList = ["Strength - feeble, scrawny", "Dexterity - clumsy, fumbling", "Constitution - sickly, pale",
     "Intelligence - dim-witted, slow", "Wisdom - oblivious, absentminded", "Charisma - dull, boring"]
     NPCLowAbilityDesc = random.choice(NPCLowAbilityList)
     #NPCLowAbilityIndex = NPCLowAbilityList.index(NPCLowAbilityDesc)
-    print(NPCLowAbilityDesc)
+    print("Low Ability:",NPCLowAbilityDesc)
 
 def NPCTalent():
     NPCTalentList = ["Plays a musical instrument", "Speaks several languages fluently", "Unbelievably lucky", "Perfect memory",
     "Great with animals", "Great with children", "Great at solving puzzles", "Great at one game", "Great at impersonations",
-    "Draws beautifully", "Paints beautifully", "Sings beautifully", "Drinks everyone under the table", "Exper carpenter",
+    "Draws beautifully", "Paints beautifully", "Sings beautifully", "Drinks everyone under the table", "Expert carpenter",
     "Expert cook", "Expert dart thrower and rock skipper", "Expert juggler", "Skilled actor and master of disguise", 
     "Skilled dancer", "Knows thieves' cant"]
     NPCTalentDesc = random.choice(NPCTalentList)
     #NPCTalentIndex = NPCTalenList.index(NPCTalentDesc)
-    print(NPCTalentDesc)
+    print("Talent:",NPCTalentDesc)
 
 def NPCMannerisms():
     NPCMannerismsList = ["Prone to singing, whistling, or humming quietly", "Speaks in rhyme or some other peculiar way",
@@ -49,28 +50,76 @@ def NPCMannerisms():
     "Fidgets", "Squints", "Stares into the distance", "Chews something", "Paces", "Taps fingers", "Bites fingernails", "Twirls hair or tugs beard"]
     NPCMannerismsDesc = random.choice(NPCMannerismsList)
     #NPCMannerismsIndex = NPCMannerismsList.index(NPCMannerismsDesc)
-    print(NPCMannerismsDesc)
+    print("Mannerisms:",NPCMannerismsDesc)
 
 def NPCInteraction():
     NPCInteractionList = ["Argumentative", "Arrogant", "Blustering", "Rude", "Curios", "Friendly", "Honest", "Hot tempered", "Irritable", "Ponderous",
     "Quiet", "Suspicious"]
     NPCInteractionDesc = random.choice(NPCInteractionList)
     #NPCInteractionIndex = NPCInteratcionList.index(NPCInteractionDesc)
-    print(NPCInteractionDesc)
+    print("Interactions:",NPCInteractionDesc)
 
 def NPCIdeals():
-    NPCGood = ["Beauty", "Charity", "Greater good", "Life", "Respect"]
-    NPCLawful = ["Community", "Fairness", "Honor", "Logic", "Responsibility", "Tradition"]
-    NPCNeutral = ["Balance", "Knowledge", "Live and let live", "Moderation", "Neutrality", "People"]
-    NPCEvil = ["Domination", "Greed", "Might", "Pain", "Retribution", "Slaughter"]
-    NPCChaotic = ["Change", "Creativity", "Freedom", "Independence", "No limits", "Whimsy"]
-    NPCOther = ["Aspiration", "Discovery", "Glory", "Nation", "Redemption", "Self-knowledge"]
+    NPCIdealGood = ["Beauty", "Charity", "Greater good", "Life", "Respect"]
+    NPCIdealLawful = ["Community", "Fairness", "Honor", "Logic", "Responsibility", "Tradition"]
+    NPCIdealNeutral = ["Balance", "Knowledge", "Live and let live", "Moderation", "Neutrality", "People"]
+    NPCIdealEvil = ["Domination", "Greed", "Might", "Pain", "Retribution", "Slaughter"]
+    NPCIdealChaotic = ["Change", "Creativity", "Freedom", "Independence", "No limits", "Whimsy"]
+    NPCIdealOther = ["Aspiration", "Discovery", "Glory", "Nation", "Redemption", "Self-knowledge"]
+    NPCIdealRandom = ["NPCIdealGood", "NPCIdealLawful", "NPCIdealNeutral", "NPCIdealEvil", 
+    "NPCIdealChaotic", "NPCIdealOther"]
+    #####IdealOptions = ["Good", "Lawful", "Neutral", "Evil", "Chaotic", "Other", "Random"]####
+    IdealChoice = input("Select an ideal: ")
+    if IdealChoice == 'Good':
+        NPCIdealsDesc = random.choice(NPCIdealGood)
+        print("Good Ideal:", NPCIdealsDesc)
+    elif IdealChoice == 'Lawful':
+        NPCIdealsDesc = random.choice(NPCIdealLawful)
+        print("Lawful Ideal:", NPCIdealsDesc)
+    elif IdealChoice == 'Neutral':
+        NPCIdealsDesc = random.choice(NPCIdealNeutral)
+        print("Neutral Ideal:", NPCIdealsDesc)
+    elif IdealChoice == 'Evil':
+        NPCIdealsDesc = random.choice(NPCIdealEvil)
+        print("Evil Ideal:", NPCIdealsDesc)
+    elif IdealChoice == 'Chaotic':
+        NPCIdealsDesc = random.choice(NPCIdealChaotic)
+        print("Chaotic Ideal:", NPCIdealsDesc)
+    elif IdealChoice == 'Other':
+        NPCIdealsDesc = random.choice(NPCIdealOther)
+        print("Other Ideal:", NPCIdealsDesc)
+    elif IdealChoice == 'Random':
+        NPCIdealRandomSelection = random.choice(NPCIdealRandom)
+        if NPCIdealRandomSelection == "NPCIdealGood":
+            NPCIdealsDesc = random.choice(NPCIdealGood)
+            print("Good Ideal:", NPCIdealsDesc)
+        elif NPCIdealRandomSelection == "NPCIdealLawful":
+            NPCIdealsDesc = random.choice(NPCIdealLawful)
+            print("Lawful Ideal:", NPCIdealsDesc)
+        elif NPCIdealRandomSelection == "NPCIdealNeutral":
+            NPCIdealsDesc = random.choice(NPCIdealNeutral)
+            print("Neutral Ideal:", NPCIdealsDesc)
+        elif NPCIdealRandomSelection == "NPCIdealEvil":
+            NPCIdealsDesc = random.choice(NPCIdealEvil)
+            print("Evil Ideal:", NPCIdealsDesc)
+        elif NPCIdealRandomSelection == "NPCIdealChaotic":
+            NPCIdealsDesc = random.choice(NPCIdealChaotic)
+            print("Chaotic Ideal:", NPCIdealsDesc)
+        elif NPCIdealRandomSelection == "NPCIdealOtherc":
+            NPCIdealsDesc = random.choice(NPCIdealOther)
+            print("Other Ideal:", NPCIdealsDesc)
+        else:
+            print("There was an error in your ideals request")
+    else:
+        print("You did not select an available ideal")
 
+NPCIdeals()
 NPCAppearance()
 NPCMannerisms()
 NPCInteraction
 NPCHighAbility()
 NPCLowAbility()
 NPCTalent()
+
 
 
