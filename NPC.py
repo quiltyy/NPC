@@ -58,6 +58,14 @@ def NPCInteraction():
     #NPCInteractionIndex = NPCInteratcionList.index(NPCInteractionDesc)
     print(NPCInteractionDesc)
 
+def NPCIdeals():
+    NPCGood = ["Beauty", "Charity", "Greater good", "Life", "Respect"]
+    NPCLawful = ["Community", "Fairness", "Honor", "Logic", "Responsibility", "Tradition"]
+    NPCNeutral = ["Balance", "Knowledge", "Live and let live", "Moderation", "Neutrality", "People"]
+    NPCEvil = ["Domination", "Greed", "Might", "Pain", "Retribution", "Slaughter"]
+    NPCChaotic = ["Change", "Creativity", "Freedom", "Independence", "No limits", "Whimsy"]
+    NPCOther = ["Aspiration", "Discovery", "Glory", "Nation", "Redemption", "Self-knowledge"]
+
 NPCAppearance()
 NPCMannerisms()
 NPCInteraction
