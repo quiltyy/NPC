@@ -114,13 +114,30 @@ def NPCIdeals():
     else:
         print("You did not select an available ideal")
 
+def NPCBond():
+    NPCBondList = ["Dedicated to fulfilling a personal life goal", "Protective of close family members",
+    "Protective of colleagues or compatriots", "Loyal to a benefactor, patron, or employer",
+    "Captivated by a romantic interest", "Drawn to a special place", "Protective of a sentimental keepsake",
+    "Protective of a valuable possesssion", "Out for revenge"]
+    NPCBondDesc = random.choice(NPCBondList)
+    #NPCInteractionIndex = NPCInteratcionList.index(NPCInteractionDesc)
+    print("Bond:",NPCBondDesc)
+
+def NPCFlaw():
+    NPCFlawList = ["Forbidden love or susceptibility to romance", "Enjoys decadent pleasures", "Arrogance",
+    "Envies another creature's possesssions or station", "Overpowering greed", "Prone to rage",
+    "Has a powerful enemy", "Specific phobia", "Shameful or scandalous history", "Secret crime or misdeed",
+    "Possession of forbidden lore", "Foolhardy bravery"]
+    NPCFlawDesc = random.choice(NPCFlawList)
+    #NPCInteractionIndex = NPCInteratcionList.index(NPCInteractionDesc)
+    print("Flaw:",NPCFlawDesc)
+
 NPCIdeals()
+NPCFlaw()
+NPCBond()
 NPCAppearance()
 NPCMannerisms()
 NPCInteraction
 NPCHighAbility()
 NPCLowAbility()
 NPCTalent()
-
-
-
