@@ -141,5 +141,3 @@ NPCInteraction
 NPCHighAbility()
 NPCLowAbility()
 NPCTalent()
-
-Test
