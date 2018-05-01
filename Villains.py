@@ -66,4 +66,75 @@ def VScheme():
     else:
         print("Please select another objective.")
 
+def VMethods():
+    Main = ['Agricultural Devastation', 'Assault or Beatings', 
+    'Bounty Hunting or Assassination', 'Captivity or Coercion', 'Confidence Scams',
+    'Defamation', 'Dueling', 'Execution', 'Impersonation or Disguise', 'Lying or Perjury',
+    'Magical Mayhem', 'Murder', 'Neglect', 'Politics', 'Religion', 'Stalking',
+    'Theft or Property Crime', 'Torture', 'Vice', 'Warfare']
+    Agriculture = ['Blight', 'Crop', 'Drought', 'Famine']
+    Captivity = ['Bribery', 'Enticement', 'Eviction', 'Imprisonment', 'Kidnapping',
+    'Legal Intimidation', 'Press Gangs', 'Shackling', 'Threats or Harassment']
+    Scams = ['Breach of Contract', 'Cheating', 'Fast Talking', 'Fine Print',
+    'Fraud or Swindling', 'Quackery or Tricks']
+    Defamation = ['Framing', 'Gossipsing or Slander', 'Humiliation', 'Libel or Insults']
+    Execution = ['Beheading', 'Burning at the Stake', 'Burying Alive', 'Crucification',
+    'Drawing and Quartering', 'Hanging', 'Impalement', 'Sacrifice (living)']
+    Magical = ['Hauntings', 'Illusions', 'Infernal Bargains', 'Mind Control', 'Petrification',
+    'Raising or Animating the Dead', 'Summoning Monsters', 'Weather Control']
+    Murder = ['Assassination', 'Cannibalism', 'Dismemberment', 'Drowning', 'Electrocution',
+    'Euthanasia (involuntary)', 'Disease', 'Proisoning', 'Stabbing', 'Strangulation or Suffocation']
+    Politics = ['Betrayal or Treason', 'Conspiracy', 'Espionage or Spying', 'Genocide',
+    'Oppression', 'Raising Taxes']
+    Religion = ['Curses', 'Desecration', 'False Gods', 'Heresy or Cults']
+    Theft = ['Arson', 'Blackmail or Extortion', 'Burglary', 'Counterfeiting', 'Highway Robbery',
+    'Looting', 'Mugging', 'Poaching', 'Seizing Property', 'Smuggling']
+    Torture = ['Acid', 'Blinding', 'Branding', 'Racking', 'Thumbscrews', 'Whipping']
+    Vice = ['Adultery', 'Drugs or Alcohol', 'Gambling', 'Seduction']
+    Warfare = ['Ambush', 'Invasion', 'Massacre', 'Mercenaries', 'Rebellion', 'Terrorism']
+    RandomMain = random.choice(Main)
+    if RandomMain == 'Argricultural Devastation':
+        XMethods = random.choice(Agriculture)
+        print ('Method:', XMethods)
+    if RandomMain == 'Captivity or Coericion':
+        XMethods = random.choice(Captivity)
+        print ('Method:', XMethods)
+    if RandomMain == 'Confidence Scams':
+        XMethods = random.choice(Scams)
+        print ('Method:', XMethods)
+    if RandomMain == 'Defamation':
+        XMethods = random.choice(Defamation)
+        print ('Method:', XMethods)
+    if RandomMain == 'Execution':
+        XMethods = random.choice(Execution)
+        print ('Method:', XMethods)
+    if RandomMain == 'Magical Mayhem':
+        XMethods = random.choice(Magical)
+        print ('Method:', XMethods)
+    if RandomMain == 'Murder':
+        XMethods = random.choice(Murder)
+        print ('Method:', XMethods)
+    if RandomMain == 'Politics':
+        XMethods = random.choice(Politics)
+        print ('Method:', XMethods)
+    if RandomMain == 'Religion':
+        XMethods = random.choice(Religion)
+        print ('Method:', XMethods)
+    if RandomMain == 'Theft or Property Crime':
+        XMethods = random.choice(Theft)
+        print ('Method:', XMethods)
+    if RandomMain == 'Torture':
+        XMethods = random.choice(Torture)
+        print ('Method:', XMethods)
+    if RandomMain == 'Vice':
+        XMethods = random.choice(Vice)
+        print ('Method:', XMethods)
+    if RandomMain == 'Warfare':
+        XMethods = random.choice(Warfare)
+        print ('Method:', XMethods)
+    else:
+        print ('Sorry')
+
+
 VScheme()
+VMethods()
