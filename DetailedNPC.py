@@ -54,22 +54,22 @@ def npc_mannerisms():
     print("Mannerisms:",npc_mannerisms_desc)
 
 def npc_interaction():
-    npc_interaction_list = ["Argumentative", "Arrogant", "Blustering", "Rude", "Curios", "Friendly", "Honest", "Hot tempered", "Irritable", "Ponderous",
-    "Quiet", "Suspicious"]
+    npc_interaction_list = ['Argumentative', 'Arrogant', 'Blustering', 'Rude', 'Curios', 'Friendly', 'Honest', 'Hot tempered', 'Irritable', 'Ponderous',
+    'Quiet', 'Suspicious']
     npc_interaction_desc = random.choice(npc_interaction_list)
     #NPCInteractionIndex = NPCInteratcionList.index(npc_interaction_desc)
     print("Interactions:",npc_interaction_desc)
 
 def npc_ideals():
-    npc_ideal_good = ["Beauty", "Charity", "Greater good", "Life", "Respect"]
-    npc_ideal_lawful = ["Community", "Fairness", "Honor", "Logic", "Responsibility", "Tradition"]
-    npc_ideal_neutral = ["Balance", "Knowledge", "Live and let live", "Moderation", "Neutrality", "People"]
-    npc_ideal_evil = ["Domination", "Greed", "Might", "Pain", "Retribution", "Slaughter"]
-    npc_ideal_chaotic = ["Change", "Creativity", "Freedom", "Independence", "No limits", "Whimsy"]
-    npc_ideal_other = ["Aspiration", "Discovery", "Glory", "Nation", "Redemption", "Self-knowledge"]
+    npc_ideal_good = ['Beauty', 'Charity', "Greater good", 'Life', 'Respect']
+    npc_ideal_lawful = ['Community', 'Fairness', 'Honor', 'Logic', 'Responsibility', 'Tradition']
+    npc_ideal_neutral = ['Balance', 'Knowledge', "Live and let live", 'Moderation', 'Neutrality', 'People']
+    npc_ideal_evil = ['Domination', 'Greed', 'Might', 'Pain', 'Retribution', 'Slaughter']
+    npc_ideal_chaotic = ['Change', 'Creativity', 'Freedom', 'Independence', 'No limits', 'Whimsy']
+    npc_ideal_other = ['Aspiration', 'Discovery', 'Glory', 'Nation', 'Redemption', 'Self-knowledge']
     npc_ideal_random = ["npc_ideal_good", "npc_ideal_lawful", "npc_ideal_neutral", "npc_ideal_evil", 
     "npc_ideal_chaotic", "npc_ideal_other"]
-    #####IdealOptions = ["Good", "Lawful", "Neutral", "Evil", "Chaotic", "Other", "Random"]####
+    #####IdealOptions = ['Good', 'Lawful', 'Neutral', 'Evil', 'Chaotic', 'Other', 'Random']####
     ideal_choice = input("Select an ideal: ")
     if ideal_choice.lower() == 'good':
         npc_ideal_desc = random.choice(npc_ideal_good)

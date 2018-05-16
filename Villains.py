@@ -67,74 +67,84 @@ def vscheme():
         print("Please select another objective.")
 
 def vmethods():
-    main = ['Agricultural Devastation', 'Assault or Beatings', 
-    'Bounty Hunting or Assassination', 'Captivity or Coercion', 'Confidence Scams',
+    main = ["Agricultural Devastation", "Assault or Beatings", 
+    "Bounty Hunting or Assassination", "Captivity or Coercion", "Confidence Scams",
     'Defamation', 'Dueling', 'Execution', 'Impersonation or Disguise', 'Lying or Perjury',
     'Magical Mayhem', 'Murder', 'Neglect', 'Politics', 'Religion', 'Stalking',
-    'Theft or Property Crime', 'Torture', 'Vice', 'Warfare']
+    "Theft or Property Crime", 'Torture', 'Vice', 'Warfare']
     agriculture = ['Blight', 'Crop', 'Drought', 'Famine']
     captivity = ['Bribery', 'Enticement', 'Eviction', 'Imprisonment', 'Kidnapping',
-    'Legal Intimidation', 'Press Gangs', 'Shackling', 'Threats or Harassment']
-    scams = ['Breach of Contract', 'Cheating', 'Fast Talking', 'Fine Print',
-    'Fraud or Swindling', 'Quackery or Tricks']
-    defamation = ['Framing', 'Gossipsing or Slander', 'Humiliation', 'Libel or Insults']
-    execution = ['Beheading', 'Burning at the Stake', 'Burying Alive', 'Crucification',
-    'Drawing and Quartering', 'Hanging', 'Impalement', 'Sacrifice (living)']
-    magical = ['Hauntings', 'Illusions', 'Infernal Bargains', 'Mind Control', 'Petrification',
-    'Raising or Animating the Dead', 'Summoning Monsters', 'Weather Control']
+    "Legal Intimidation", "Press Gangs", 'Shackling', "Threats or Harassment"]
+    scams = ["Breach of Contract", 'Cheating', 'Fast Talking', 'Fine Print',
+    "Fraud or Swindling", "Quackery or Tricks"]
+    defamation = ['Framing', "Gossipsing or Slander", 'Humiliation', "Libel or Insults"]
+    execution = ['Beheading', "Burning at the Stake", "Burying Alive", 'Crucification',
+    "Drawing and Quartering", 'Hanging', 'Impalement', "Sacrifice (living)"]
+    magical = ['Hauntings', 'Illusions', "Infernal Bargains", "Mind Control", 'Petrification',
+    "Raising or Animating the Dead", "Summoning Monsters", "Weather Control"]
     murder = ['Assassination', 'Cannibalism', 'Dismemberment', 'Drowning', 'Electrocution',
-    'Euthanasia (involuntary)', 'Disease', 'Proisoning', 'Stabbing', 'Strangulation or Suffocation']
-    politics = ['Betrayal or Treason', 'Conspiracy', 'Espionage or Spying', 'Genocide',
-    'Oppression', 'Raising Taxes']
-    religion = ['Curses', 'Desecration', 'False Gods', 'Heresy or Cults']
-    theft = ['Arson', 'Blackmail or Extortion', 'Burglary', 'Counterfeiting', 'Highway Robbery',
-    'Looting', 'Mugging', 'Poaching', 'Seizing Property', 'Smuggling']
+    "Euthanasia (involuntary)", 'Disease', 'Proisoning', 'Stabbing', "Strangulation or Suffocation"]
+    politics = ["Betrayal or Treason", 'Conspiracy', "Espionage or Spying", 'Genocide',
+    'Oppression', "Raising Taxes"]
+    religion = ['Curses', 'Desecration', "False Gods", "Heresy or Cults"]
+    theft = ['Arson', "Blackmail or Extortion", 'Burglary', 'Counterfeiting', "Highway Robbery",
+    'Looting', 'Mugging', 'Poaching', "Seizing Property", 'Smuggling']
     torture = ['Acid', 'Blinding', 'Branding', 'Racking', 'Thumbscrews', 'Whipping']
-    vice = ['Adultery', 'Drugs or Alcohol', 'Gambling', 'Seduction']
+    vice = ['Adultery', "Drugs or Alcohol", 'Gambling', 'Seduction']
     warfare = ['Ambush', 'Invasion', 'Massacre', 'Mercenaries', 'Rebellion', 'Terrorism']
     random_main = random.choice(main)
-    if random_main == 'Argricultural Devastation':
+    if random_main == "Argricultural Devastation":
         v_methods = random.choice(agriculture)
-        print ('Method:', v_methods)
-    elif random_main == 'Captivity or Coericion':
+        print ("Method:", v_methods)
+    elif random_main == "Captivity or Coericion":
         v_methods = random.choice(captivity)
-        print ('Method:', v_methods)
-    elif random_main == 'Confidence Scams':
+        print ("Method:", v_methods)
+    elif random_main == "Confidence Scams":
         v_methods = random.choice(scams)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Defamation':
         v_methods = random.choice(defamation)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Execution':
         v_methods = random.choice(execution)
-        print ('Method:', v_methods)
-    elif random_main == 'Magical Mayhem':
+        print ("Method:", v_methods)
+    elif random_main == "Magical Mayhem":
         v_methods = random.choice(magical)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Murder':
         v_methods = random.choice(murder)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Politics':
         v_methods = random.choice(politics)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Religion':
         v_methods = random.choice(religion)
-        print ('Method:', v_methods)
-    elif random_main == 'Theft or Property Crime':
+        print ("Method:", v_methods)
+    elif random_main == "Theft or Property Crime":
         v_methods = random.choice(theft)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Torture':
         v_methods = random.choice(torture)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Vice':
         v_methods = random.choice(vice)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     elif random_main == 'Warfare':
         v_methods = random.choice(warfare)
-        print ('Method:', v_methods)
+        print ("Method:", v_methods)
     else:
-        print ('Sorry')
+        print ("Method:", random_main)
+
+def vweakness():
+    weakness = ["A hidden object holds the villain's soul", "The villain's power is broken if the death of it's true love is avneged",
+    "The villain is weakened in the presence of a particular artifact", "A special weapon deals extra daamge when used against the villain",
+    "The villain is destroyed if it speaks it's true name", "An ancient prophecy or riddle reveals how the villain can be overthrown",
+    "The villain falls when an ancient enemy forgives it's past actions", "The villain loses it's power if a mystic bargain it struck long ago is completed"]
+    random_weakness == random.choice(weakness)
+    print ("Weakness: ", random_weakness)
+
 
 
 vscheme()
 vmethods()
+vweakness()
