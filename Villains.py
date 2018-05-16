@@ -140,11 +140,14 @@ def vweakness():
     "The villain is weakened in the presence of a particular artifact", "A special weapon deals extra daamge when used against the villain",
     "The villain is destroyed if it speaks it's true name", "An ancient prophecy or riddle reveals how the villain can be overthrown",
     "The villain falls when an ancient enemy forgives it's past actions", "The villain loses it's power if a mystic bargain it struck long ago is completed"]
-    random_weakness == random.choice(weakness)
-    print ("Weakness: ", random_weakness)
+    print ("Weakness: ", random.choice(weakness))
 
+def vclass():
+    class_list = ['Barbarian', 'Bard', "Death Domain Cleric", 'Druid', 'Fighter', 
+    'Monk', 'Oathbreaker Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
+    print ("Class: ", random.choice(class_list))
 
-
+vclass()
 vscheme()
 vmethods()
 vweakness()
