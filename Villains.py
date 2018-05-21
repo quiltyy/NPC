@@ -147,7 +147,7 @@ def vclass():
     'Monk', 'Oathbreaker Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']
     print ("Class: ", random.choice(class_list))
 
-vclass()
 vscheme()
+vclass()
 vmethods()
 vweakness()
